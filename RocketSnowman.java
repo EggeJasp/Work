@@ -1,26 +1,25 @@
-public class dabbadabba
+public class RocketSnowman
 {
+    public static final int LAYERS = 3;
 
-    public static final int qq = 3;
-
-    public static void foo() {
-        for (int i = 0; i < (qq+1)*2+1; i++) {
+    public static void dashes() {
+        for (int i = 0; i < (LAYERS+1)*2+1; i++) {
             System.out.print("-");
         }
     }
-    public static void bippityBop() {
-        foo();
+    public static void percentageTunnel() {
+        dashes();
         System.out.print("| %");
         for (int i = 0; i < 4; i++) {
             System.out.print(" ");
         }
         System.out.print("% |" );
-        foo();
+        dashes();
         System.out.println();
     }
-    public static void fooBop() {
-        bippityBop();
-        for (int i = 0; i < qq+1; i++) {
+    public static void silo() {
+        percentageTunnel();
+        for (int i = 0; i < LAYERS+1; i++) {
             System.out.print(" o");
         }
         System.out.print(" | %");
@@ -28,15 +27,15 @@ public class dabbadabba
             System.out.print(" ");
         }
         System.out.print("% | ");
-        for (int i = 0; i < qq+1; i++) {
+        for (int i = 0; i < LAYERS+1; i++) {
             System.out.print("o ");
         }
         System.out.println();
-        bippityBop();
+        percentageTunnel();
     }
     public static void drawSteps() {
-        for (int i = 0; i < qq; i++) {
-            for (int j = 0; j < (qq+1)-i; j++) {
+        for (int i = 0; i < LAYERS; i++) {
+            for (int j = 0; j < (LAYERS+1)-i; j++) {
                 System.out.print("~^");
             }
             System.out.print("~/");
@@ -44,11 +43,11 @@ public class dabbadabba
                 System.out.print("-");
             }
             System.out.print("\\~");
-            for (int j = 0; j < (qq+1)-i; j++) {
+            for (int j = 0; j < (LAYERS+1)-i; j++) {
                 System.out.print("^~");
             }
             System.out.println();
-            for (int j = 0; j < (qq+1)-i; j++) {
+            for (int j = 0; j < (LAYERS+1)-i; j++) {
                 System.out.print("^~");
             }
             System.out.print("/");
@@ -56,11 +55,11 @@ public class dabbadabba
                 System.out.print("-");
             }
             System.out.print("\\");
-            for (int j = 0; j < (qq+1)-i; j++) {
+            for (int j = 0; j < (LAYERS+1)-i; j++) {
                     System.out.print("~^");
             }
             System.out.println();
-            for (int j = 0; j < (qq+1)*2-(2*i); j++) {
+            for (int j = 0; j < (LAYERS+1)*2-(2*i); j++) {
                 System.out.print(" ");
             }
             System.out.print("|");
@@ -74,7 +73,7 @@ public class dabbadabba
 
     public static void main(String[] args) {
         for (int i = 0; i < 5; i++) {
-            for (int j = 0; j < (qq+1)*2+(5-i); j++) {
+            for (int j = 0; j < (LAYERS+1)*2+(5-i); j++) {
                 System.out.print(" ");
             }
             System.out.print("/");
@@ -83,46 +82,46 @@ public class dabbadabba
             }
             System.out.println("\\");
         }
-        fooBop();
+        silo();
         drawSteps();
         System.out.print("   /");
-        for (int i = 0; i < 12+4*(qq-1); i++){
+        for (int i = 0; i < 12+4*(LAYERS-1); i++){
                 System.out.print(" ");
         }
         System.out.print("\\");
         System.out.println();
         System.out.print("  /  ");
-        for (int i = 0; i < 10+4*(qq-1); i++){
+        for (int i = 0; i < 10+4*(LAYERS-1); i++){
                 System.out.print("=");
         }
         System.out.print("  \\");
         System.out.println();
         System.out.print(" /  / ");
-        for (int i = 0; i < 8+4*(qq-1); i++){
+        for (int i = 0; i < 8+4*(LAYERS-1); i++){
             System.out.print("\"");
         }
         System.out.print(" \\  \\");
         System.out.println();
         System.out.print("|  | ");
-        for (int i = 0; i < 10+4*(qq-1); i++){
+        for (int i = 0; i < 10+4*(LAYERS-1); i++){
             System.out.print("\"");
         }
         System.out.print(" |  |");
         System.out.println();
         System.out.print(" \\  \\ ");
-        for (int i = 0; i < 8+4*(qq-1); i++){
+        for (int i = 0; i < 8+4*(LAYERS-1); i++){
             System.out.print("\"");
         }
         System.out.print(" /  /");
         System.out.println();
         System.out.print("  \\  ");
-        for (int i = 0; i < 10+4*(qq-1); i++) {
+        for (int i = 0; i < 10+4*(LAYERS-1); i++) {
             System.out.print("=");
         }
         System.out.print("  /");
         System.out.println();
         System.out.print("   \\");
-        for (int i = 0; i < 12+4*(qq-1); i++) {
+        for (int i = 0; i < 12+4*(LAYERS-1); i++) {
             System.out.print("_");
         }
         System.out.println("/");
